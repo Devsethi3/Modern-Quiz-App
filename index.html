@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App | Javascript Project</title>
+
+    <!-- Link Custom CSS File -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Remix Icon CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+
+<body>
+
+
+    <div class="container flexitem">
+        <div class="start-game-btn">
+            <button class="btn" id="start-btn">Start Game</button>
+        </div>
+        <h1 class="heading">QUIZ APP</h1>
+        <div class="quiz hide">
+            <div class="quiz-header flexitem">
+                <h3 class="quiz-heading">QUIZ WEBSITE</h3>
+                <p id="time-left"><i class="ri-timer-line"></i>Time Left : 10s</p>
+                <span class="header-score">Score: 0 / 10</span>
+            </div>
+            <div class="app">
+                <h3 class="question-text"></h3>
+                <div class="option-list"></div>
+            </div>
+            <div class="quiz-footer flexitem">
+                <p class="total-question">1 out of 10 Question</p>
+                <button class="btn next-btn" id="next-btn">Next</button>
+            </div>
+        </div>
+        <div class="result-box flexitem">
+            <h2 class="result-heading">Quiz Result!</h2>
+            <div class="percentage-container">
+                <div class="circular-progress">
+                    <span class="progress-value">0%</span>
+                </div>
+                <span class="score-text">Your Score 0 out of 10</span>
+            </div>
+            <button class="primary-btn" id="try-again">Try Again</button>
+        </div>
+    </div>
+
+    <!-- Link Custom JS File -->
+    <script src="script.js"></script>
+</body>
+
+</html>
